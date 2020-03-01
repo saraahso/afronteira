@@ -1,0 +1,19 @@
+/*!
+    Theme Name: Afronteira Theme
+    Theme URI: https://github.com/saraahso/afronteira
+    Version: 1.0.0
+    Author: Sara S. Sparrer
+    Author URI: https://github.com/saraahso/
+
+    License: MIT
+    License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import './utils/mixins';
+@import './utils/variables';
+@import './base/typography';
+@import './components/half-border';
+@import './base/reset';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/main';

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../../assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../../assets/fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../../assets/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../../assets/fonts/Roboto-thin.ttf');
+}
+
+$roboto: 'Roboto';
+$roboto-bold: 'Roboto Bold';
+$roboto-black: 'Roboto Black';
+$roboto-medium: 'Roboto Medium';
+$roboto-thin: 'Roboto Thin';
+
+@mixin typoH1 {
+    font-family: $roboto-black;
+    font-size: 35px;
+
+    @include mobile {
+        font-size: 25px;
+    }
+}
+@mixin typoH3 {
+    font-family: $roboto-black;
+    font-size: 22px;
+
+    @include mobile {
+        font-size: 18px;
+    }
+
+}
+
+@mixin typoH5 {
+    font-family: $roboto-black;
+    font-size: 14px;
+
+    @include mobile {
+        font-size: 10px;
+    }
+
+}
+
+@mixin typoDate {
+    font-family: $roboto;
+    font-size: 14px;
+    color: $dark_gray;
+}
+
+@mixin typoDateSmall {
+    font-family: $roboto;
+    font-size: 10px;
+    color: $dark_gray;
+}
+
+@mixin typoParagraph {
+    font-family: $roboto;
+    font-size: 16px;
+}
+
+@mixin typoParagraphSmall {
+    font-family: $roboto-medium;
+    font-size: 10px;
+}
