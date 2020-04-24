@@ -3,8 +3,8 @@ Contributors: nextendweb
 Tags: slider, wordpress slider, image slider, layer slider, responsive slider, slideshow, fullwidth slider, post slider, horizontal slider, vertical slider, photo slider, video slider
 Donate link: https://sites.fastspring.com/nextend/product/smartslider3donate
 Requires at least: 4.6
-Tested up to: 5.3
-Stable tag: 3.3.27
+Tested up to: 5.4
+Stable tag: 3.3.28
 Requires PHP: 7.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -195,6 +195,15 @@ Of course! Smart Slider use protocol relative urls which works fine on http:// a
 9. Layer slider with layers styles. Made with FREE version.
 
 == Changelog ==
+
+= 3.3.28 - 25. March 2020. =
+* Feature: Slide background image Focus X and Y accept variables
+* Feature: Google Font list updated
+* Fix: Alias slide switching 
+* Fix: Google Cloud Storage plugin compatibility
+* Fix: YouTube layer uses the hqdefault as the cover image
+* Fix: Jetpack Photon compatibility
+* Fix: Slide manager thumbnail fix
 
 = 3.3.27 - 12. February 2020. =
 * Feature: Edge selector at Scroll to slider on user interaction 

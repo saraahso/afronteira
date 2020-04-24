@@ -2831,7 +2831,7 @@ N2D('SlidesManager', function ($, undefined) {
                                         type: 'youtube',
                                         title: 'YouTube video',
                                         description: '',
-                                        image: 'https://i.ytimg.com/vi/' + encodeURI(youtubeMatch[2]) + '/maxresdefault.jpg',
+                                        image: 'https://i.ytimg.com/vi/' + encodeURI(youtubeMatch[2]) + '/hqdefault.jpg',
                                         video: video
                                     });
                                 } else if (vimeoMatch) {
@@ -3571,6 +3571,8 @@ N2D('EditorSlide', ['EditorAbstract'], function ($, undefined) {
             '#sldedescription',
             '#slidethumbnail',
             '#slidebackgroundImage',
+            '#slidebackgroundFocusX',
+            '#slidebackgroundFocusY',
             '#slidebackgroundAlt',
             '#slidebackgroundTitle',
             '#slidebackgroundVideoMp4',
@@ -5190,11 +5192,11 @@ N2D('SlideSettings', function ($, undefined) {
     };
 
     SlideSettings.prototype.getBackgroundFocusX = function () {
-        return this.fields.backgroundFocusX.val();
+        return this.editor.generator.fill(this.fields.backgroundFocusX.val());
     };
 
     SlideSettings.prototype.getBackgroundFocusY = function () {
-        return this.fields.backgroundFocusY.val();
+        return this.editor.generator.fill(this.fields.backgroundFocusY.val());
     };
 
 
@@ -17350,9 +17352,9 @@ N2D('ItemYoutube', ['Item'], function ($, undefined) {
                 youtubeMatch = data.youtubeurl.match(youtubeRegexp);
 
             if (youtubeMatch) {
-                var url = 'https://i.ytimg.com/vi/' + youtubeMatch[2] + '/maxresdefault.jpg';
+                var url = 'https://i.ytimg.com/vi/' + youtubeMatch[2] + '/hqdefault.jpg';
                 if (this.values.youtubeurl == '{video_url}') {
-                    url = 'https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg';
+                    url = 'https://i.ytimg.com/vi/{video_id}/hqdefault.jpg';
                 }
 
                 setTimeout(function () {

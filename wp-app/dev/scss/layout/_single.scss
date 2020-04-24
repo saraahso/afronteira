@@ -1,0 +1,38 @@
+main{
+
+    h3{
+        @include typoH3;
+    }
+    
+    .af-single{
+
+
+    p{
+        display: block;
+    }
+
+    .wp-block-image{
+        margin:auto;
+        .aligncenter{
+            text-align:center !important;
+        }
+    }
+
+    .has-text-align-center{
+        display: inline-block;
+        width: 100%;
+    }
+
+
+        h1{
+            @include typoH1;
+        }
+
+        .af-single-image img{
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+

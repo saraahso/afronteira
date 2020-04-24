@@ -103,7 +103,16 @@ window.n2const = {
         } else {
             window.location = l;
         }
-    }
+    },
+    isParentSameOrigin: function () {
+        try {
+            parent.document;
+            return true;
+        } catch (e) {
+        }
+
+        return false;
+    },
 };
 
 window.n2const.IOSVersion = (function () {

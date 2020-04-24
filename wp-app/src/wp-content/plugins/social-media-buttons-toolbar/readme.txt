@@ -2,9 +2,10 @@
 Contributors: Arthur Gareginyan
 Tags: icon, icon set, button, social, media, social button, social media, social network, follow, follow button, follow link, follow icon, follow me, toolbar, link to profile, facebook, flickr, twitter, instagram, google plus, youtube, google-play, itunes, apple-music, periscope, vimeo, blogger, buzzsprout, livejournal, linkedIn, diaspora, deviantart, xing, pinterest, tumblr, snapchat, twitch, patreon, imdb, soundcloud, plugdj, plug dj, spotify, bandcamp, dloky, amazon, bookbub, goodreads, meetvibe, meetup, steam, beam, mixer, discord, yelp, bloglovin, mediumg, 500px, behance, polyvore, yellowpages, line, itch, itch.io, mastodon, remind, trademe, vsco, hireology, kompoz, soundblend, stumbleupon, whatsapp, vkontakte, vk, vk.com, odnoklassniki, ok, ok.ru, telegram, github, wordpress, codepen, askfm, ebay, hangouts, houzz, quora, steemit, theartstack, theknot, viber, etsy, tripadvisor, stackoverflow, stackexchange, bitbucket, dailypaintworks, flipboard, feedsfloor, gab, minds, wattpad, itunes podcasts, aboutme, group, stitcher, strava, wechat, weibo, blackberry-world, iheart, livestream, tunein, untappd, skype, personal website, email, telephone, phone, rss feed, rss, feed, tooltips, bootstrap tooltip
 Donate link: https://www.spacexchimp.com/donate.html
-Requires at least: 3.9
-Tested up to: 5.3
-Stable tag: 4.58
+Requires at least: 4.9
+Tested up to: 5.4
+Requires PHP: 5.6
+Stable tag: 4.59
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -178,11 +179,13 @@ If you want to help translate this plugin, please visit the [translation page](h
 
 **Minimum system requirements:**
 
-* [PHP](https://secure.php.net) version **5.2** or higher.
+* [WordPress](https://wordpress.org) version **4.9** or higher.
+* [PHP](https://secure.php.net) version **5.6** or higher.
 * [MySQL](https://www.mysql.com) version **5.0** or higher.
 
 **Recommended system requirements:**
 
+* [WordPress](https://wordpress.org) version **5.0** or higher.
 * [PHP](https://secure.php.net) version **7.0** or higher.
 * [MySQL](https://www.mysql.com) version **5.6** or higher.
 
@@ -216,7 +219,7 @@ Manually via FTP access:
 
 After installation and activation, the "`Follow Buttons`" menu item will appear in the "`Settings`" section of Admin Area. Click on it in order to view the plugin settings page.
 
-[More help installing plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
+[More help installing plugins](https://wordpress.org/support/article/managing-plugins/ "WordPress Codex: Installing Plugins")
 
 
 == Frequently Asked Questions ==
@@ -296,10 +299,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * The icon of plugin is a copyrighted image created by the [Space X-Chimp](https://www.spacexchimp.com) team. (C) All rights reserved.
 * The banner of plugin is a copyrighted image created by the [Space X-Chimp](https://www.spacexchimp.com) team. (C) All rights reserved.
 * The Entrepreneur image that used on banner is from [Pixabay](https://pixabay.com/photos/entrepreneur-start-start-up-career-696976/) and licensed under the [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en).
-* Icons [blackberry-world.png, iheart.png, livestream.png, tunein.png, untappd.png, about-me.png, facebook-group.png, stitcher.png, strava.png, wechat.png, weibo.png, feedsfloor.png, bitbucket.png, dailypaintworks.png, flipboard.png, gab.png, minds.png, theknot.png, viber.png, etsy.png, tripadvisor.png, stackoverflow.png, stackexchange.png, wattpad.png, itunes-podcasts.png, email.png, facebook.png, linkedin.png, google-play.png, itch.png, mastodon.png, remind.png, trademe.png, vsco.png, hireology.png, kompoz.png, soundblend.png, itunes.png, apple-music.png, medium.png, 500px.png, behance.png, polyvore.png, yellowpages.png, mixer.png, telephone.png, bloglovin.png, line.png, stumbleupon.png, whatsapp.png, plugdj.png, deviantart.png, buzzsprout.png, periscope.png, youtube.png, meetvibe.png, wordpress.png, twitter.png, imdb.png, dloky.png, snapchat.png, steam.png, discord.png, twitch.png, amazon.png, bookbub.png, goodreads.png, reddit.png, meetup.png, codepen.png, askfm.png, ebay.png, hangouts.png, houzz.png, quora.png, steemit.png, theartstack.png, instagram.png, patreon.png, bandcamp.png, youtube-gaming.png, xing.png](https://www.iconfinder.com/iconsets/square-logo-buttons?ref=ArthurGareginyan) by [Arthur Gareginyan](https://www.arthurgareginyan.com) and licensed under the [Creative Commons (Attribution 3.0 Unported)](http://creativecommons.org/licenses/by/3.0/).
-* Icons [flickr.png, google-plus.png, vimeo.png, blogger.png, livejournal.png, pinterest.png, tumblr.png, soundcloud.png, spotify.png, yelp.png, vkontakte.png, odnoklassniki.png, telegram.png, github.png, skype.png, website.png, rss-feed.png](https://www.iconfinder.com/iconsets/social-buttons-2?ref=ArthurGareginyan) by Ivlichev Victor Petrovich and licensed under the [Creative Commons (Attribution 3.0 Unported)](http://creativecommons.org/licenses/by/3.0/).
+* Icons [blackberry-world.png, iheart.png, livestream.png, tunein.png, untappd.png, about-me.png, facebook-group.png, stitcher.png, strava.png, wechat.png, weibo.png, feedsfloor.png, bitbucket.png, dailypaintworks.png, flipboard.png, gab.png, minds.png, theknot.png, viber.png, etsy.png, tripadvisor.png, stackoverflow.png, stackexchange.png, wattpad.png, itunes-podcasts.png, email.png, facebook.png, linkedin.png, google-play.png, itch.png, mastodon.png, remind.png, trademe.png, vsco.png, hireology.png, kompoz.png, soundblend.png, itunes.png, apple-music.png, medium.png, 500px.png, behance.png, polyvore.png, yellowpages.png, mixer.png, telephone.png, bloglovin.png, line.png, stumbleupon.png, whatsapp.png, plugdj.png, deviantart.png, buzzsprout.png, periscope.png, youtube.png, meetvibe.png, wordpress.png, twitter.png, imdb.png, dloky.png, snapchat.png, steam.png, discord.png, twitch.png, amazon.png, bookbub.png, goodreads.png, reddit.png, meetup.png, codepen.png, askfm.png, ebay.png, hangouts.png, houzz.png, quora.png, steemit.png, theartstack.png, instagram.png, patreon.png, bandcamp.png, youtube-gaming.png, xing.png](https://www.iconfinder.com/iconsets/square-logo-buttons?ref=MilenaKiseleva) by [Arthur Gareginyan](https://www.arthurgareginyan.com) and licensed under the [Creative Commons (Attribution 3.0 Unported)](http://creativecommons.org/licenses/by/3.0/).
+* Icons [flickr.png, google-plus.png, vimeo.png, blogger.png, livejournal.png, pinterest.png, tumblr.png, soundcloud.png, spotify.png, yelp.png, vkontakte.png, odnoklassniki.png, telegram.png, github.png, skype.png, website.png, rss-feed.png](https://www.iconfinder.com/iconsets/social-buttons-2?ref=MilenaKiseleva) by Ivlichev Victor Petrovich and licensed under the [Creative Commons (Attribution 3.0 Unported)](http://creativecommons.org/licenses/by/3.0/).
 * [Bootstrap](http://getbootstrap.com) by Twitter, Inc. released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 * [Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
+* [Font Awesome](https://fontawesome.com) is an open source-project created by Dave Gandy. Font released under the [SIL OFL 1.1 license](http://scripts.sil.org/OFL). Code released under the [MIT License](http://opensource.org/licenses/mit-license.html).
 
 **Links**
 
@@ -309,6 +313,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.59 - Mar 20, 2020 =
+* Maintenance: Ensure compatibility with upcoming WordPress 5.4.
+* Maintenance: Minimum WordPress version requirement is set to 4.9. Support for WordPress 4.8 and below has been discontinued.
+* Maintenance: Minimum PHP version requirement is set to 5.6. Support for PHP 5.5 and below has been discontinued.
 
 = 4.58 - Jan 30, 2020 =
 * Improvement: The name of the menu item that leads to the plugin settings page has been changed from "Social Media Follow Buttons" to a shorter "Follow Buttons" for the convenience of users.

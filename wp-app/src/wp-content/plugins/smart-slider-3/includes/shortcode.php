@@ -213,6 +213,22 @@ class N2SS3Shortcode {
     private static function removeShortcode() {
         remove_shortcode('smartslider3');
     }
+
+    public static function headStart() {
+        self::shortcodeModeToNoop();
+
+        add_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNormal', -1000000);
+        add_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNoop', 1000000);
+
+    }
+
+    public static function headEnd() {
+
+        remove_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNormal', -1000000);
+        remove_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNoop', 1000000);
+
+        self::shortcodeModeToNormal();
+    }
 }
 
 N2SS3Shortcode::addShortCode();
@@ -226,11 +242,8 @@ if (defined('DOING_AJAX') && DOING_AJAX) {
 /**
  * There should not be sliders in the head
  */
-add_action('wp_head', 'N2SS3Shortcode::shortcodeModeToNoop', -10000);
-add_action('wp_head', 'N2SS3Shortcode::shortcodeModeToNormal', 10000);
-
-add_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNormal', -1000000);
-add_action('wp_enqueue_scripts', 'N2SS3Shortcode::shortcodeModeToNoop', 1000000);
+add_action('wp_head', 'N2SS3Shortcode::headStart', -10000);
+add_action('wp_head', 'N2SS3Shortcode::headEnd', 10000);
 
 
 add_action('woocommerce_shop_loop', 'N2SS3Shortcode::shortcodeModeToNoop', 9);

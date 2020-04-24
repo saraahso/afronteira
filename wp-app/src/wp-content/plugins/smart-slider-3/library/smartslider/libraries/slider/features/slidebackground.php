@@ -189,8 +189,8 @@ class N2SmartSliderFeatureSlideBackground {
 
         $backgroundImageBlur = max(0, $slide->parameters->get('backgroundImageBlur', 0));
 
-        $x = max(0, min(100, $slide->parameters->get('backgroundFocusX', 50)));
-        $y = max(0, min(100, $slide->parameters->get('backgroundFocusY', 50)));
+        $x = max(0, min(100, $slide->fill($slide->parameters->get('backgroundFocusX', 50))));
+        $y = max(0, min(100, $slide->fill($slide->parameters->get('backgroundFocusY', 50))));
 
         if ($slide->hasGenerator()) {
 

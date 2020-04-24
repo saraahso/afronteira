@@ -9,28 +9,53 @@
     <?php wp_head(); ?>
 </head>
 
+<?php
+$args = array(
+    'category_name' => 'noticias-recentes',
+    'post_type' => 'post',
+    'posts_per_page' => '4',
+    'orderby' => 'date',
+    'order' => 'DESC',
+);
+
+$query = new WP_Query( $args );
+
+?>
+
 <body class="container-fluid">
     <header>
         <section class="row af-top-row">
             <div class="container">
+
                 <div class="row p-2 ml-1 carousel slide" data-ride="carousel">
                     <div class="col-12 col-sm-8 p-2 carousel-inner">
-                        <p class="float-left"><i class="fi-cwluxl-lightning-solid fi-size-l"></i> <span>TREDING</span></p>
-                        <div class="carousel-item active">| Ratcliffe to be Director of nation talent Trump ignored
-                        </div>
-                        <div class="carousel-item">| to be Director of nation talent Trump ignored</div>
-                        <div class="carousel-item">| to be of nation talent Trump ignored</div>
+                        <p class="float-left"><i class="fi-cwluxl-lightning-solid fi-size-l"></i> <span>TRENDING</span>
+                        </p>
+                        <?php if ( $query->have_posts() ) {
+                        // The 2nd Loop
+                        while ( $query->have_posts() ) {
+                        $query->the_post(); ?>
+                            <div class="carousel-item ">| <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                            </div>
+                        <?php }
+                        wp_reset_postdata();
+                        } // end if 
+                        
+                        ?>
+                        <div class="carousel-item active">| A fronteira 8 anos com um novo jeito de informar</div>
                     </div>
                     <div class="col-12 col-sm-4 p-2">
                         <p><i class="fi-xnsuxl-calendar-solid fi-size-l"></i>
                             <?php echo _e("Hoje é ", "afronteira"); echo date("d/m/Y"); ?></p>
                     </div>
                 </div>
+
         </section>
 
         <section class="container text-center">
-            <a class="af-brand" href="#">
-                <img class="animated zoomIn" src="<?php bloginfo( 'template_url' ); ?>/assets/images/logo8anos.png" alt="Afronteira logo">
+            <a class="af-brand" href="<?php echo site_url() ?>">
+                <img class="animated zoomIn" src="<?php bloginfo( 'template_url' ); ?>/assets/images/logo8anos.png"
+                    alt="Afronteira logo">
             </a>
         </section>
 
@@ -45,37 +70,29 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/quem-somos">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Notícias</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/category/noticias-recentes">Notícias Recentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cidade</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/category/cidade">Cidade</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Estadual</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/category/estadual">Estadual</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nacional</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/category/nacional">Nacional</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mundo</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/category/mundo">Mundo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Canal Ao Vivo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Agenda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="<?php echo site_url() ?>/contato">Contato</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
-                                class="fi-xnsuxl-search fi-size-l"></i></button>
+                    <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
                     </form>
                 </div>
             </div>

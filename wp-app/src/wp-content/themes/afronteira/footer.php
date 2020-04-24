@@ -13,15 +13,13 @@
             <div class="col-12 col-sm-3">
                 <h5>MENU</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Quem Somos</a></li>
-                    <li><a class="text-muted" href="#">Notícias Recentes</a></li>
-                    <li><a class="text-muted" href="#">Cidade</a></li>
-                    <li><a class="text-muted" href="#">Estadual</a></li>
-                    <li><a class="text-muted" href="#">Nacional</a></li>
-                    <li><a class="text-muted" href="#">Mundo</a></li>
-                    <li><a class="text-muted" href="#">Canal Ao Vivo</a></li>
-                    <li><a class="text-muted" href="#">Agenda</a></li>
-                    <li><a class="text-muted" href="#">Contato</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/quem-somos">Quem Somos</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/category/noticias-recentes">Notícias Recentes</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/category/cidade">Cidade</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/category/estadual">Estadual</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/category/nacional">Nacional</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/category/mundo">Mundo</a></li>
+                    <li><a class="text-muted" href="<?php echo site_url() ?>/contato">Contato</a></li>
                 </ul>
 
             </div>

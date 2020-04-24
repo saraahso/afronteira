@@ -31,7 +31,7 @@ $roboto-thin: 'Roboto Thin';
 
 @mixin typoH1 {
     font-family: $roboto-black;
-    font-size: 35px;
+    font-size: 2.20rem !important;
 
     @include mobile {
         font-size: 25px;
@@ -39,7 +39,7 @@ $roboto-thin: 'Roboto Thin';
 }
 @mixin typoH3 {
     font-family: $roboto-black;
-    font-size: 22px;
+    font-size: 1.50rem !important;
 
     @include mobile {
         font-size: 18px;
@@ -49,7 +49,7 @@ $roboto-thin: 'Roboto Thin';
 
 @mixin typoH5 {
     font-family: $roboto-black;
-    font-size: 14px;
+    font-size: 1.18rem !important;
 
     @include mobile {
         font-size: 10px;

@@ -1,4 +1,10 @@
 main {
+
+    a{
+        text-decoration: none !important;
+        color: $darker_gray !important;
+    }
+
     .n2-ss-slider {
         border-radius: 4px !important;
         overflow: hidden;
@@ -30,12 +36,26 @@ main {
             font-family: $roboto-bold;
             color: $black;
 
+            h5{
+                @include typoH5;
+            }
+
             i {
                 color: $dark_gray;
             }
 
+            .af-card-title{
+                height: 62px;
+                overflow: hidden;
+            }
+
             .af-card-date {
                 @include typoDate;
+            }
+
+            span p{
+                height: 95px;
+                overflow: hidden;
             }
 
         }
@@ -157,12 +177,19 @@ main {
         .af-half-border {
             border-color: $af_red;
         }
+        .af-card-right{
+            height:115px;
+        }
 
         .af-card {
 
             .af-img-card {
-                height: 389px;
                 width: 100%;
+
+                .card-img-top{
+                    border-radius: 4px !important;
+                    overflow: hidden;
+                }
 
                 img {
                     z-index: 998;
@@ -287,4 +314,96 @@ main {
             }
         }
     }
+
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    } 
+
+    .embed-container-teaser iframe,
+    .embed-container-teaser object,
+    .embed-container-teaser embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .embed-container-peq iframe,
+    .embed-container-peq object,
+    .embed-container-peq embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 36%;
+        border-radius: 4px !important;
+        overflow: hidden;
+    }
+
+    .archive{
+
+        .af-card-right {
+            .af-img-card {
+                border-radius: 4px !important;
+                max-width: 290px;
+                max-height: 164px;
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(1);
+                    transition: transform 2s;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+    
+            .card-body {
+                button {
+                    padding: 4px 3px;
+                    font-size: 9px;
+                    line-height: 1;
+                    border-radius: .2rem;
+                }
+    
+                h5 {
+                    @include typoH5;
+                }
+    
+                .af-card-date {
+                    @include typoDateSmall;
+                    margin-top: 1px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.wpcf7-submit{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

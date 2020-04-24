@@ -5976,6 +5976,10 @@ N2D('FormElementNumber', ['FormElement'], function ($, undefined) {
     };
 
     FormElementNumber.prototype.validate = function (value) {
+        if (value.length > 0 && value.charAt(0) === '{') {
+            return true;
+        }
+
         var validatedValue = parseFloat(value);
         if (isNaN(validatedValue)) {
             validatedValue = 0;

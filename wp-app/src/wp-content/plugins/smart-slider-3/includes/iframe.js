@@ -99,7 +99,7 @@ if (typeof window.n2SSIframeLoader !== "function") {
                         /**
                          * We can detect every width changes with a dummy iframe.
                          */
-                        this.$resizeObserverIframe = $('<iframe class="bt_skip_resize" sandbox="allow-same-origin allow-scripts" style="margin:0;padding:0;border:0;display:block;width:100%;height:0;min-height:0;max-height:0px;"/>')
+                        this.$resizeObserverIframe = $('<iframe class="bt_skip_resize" sandbox="allow-same-origin allow-scripts" style="margin:0 !important;padding:0;border:0;display:block;width:100%;height:0;min-height:0 !important;max-height:0;"/>')
                             .on('load', $.proxy(function (e) {
                                 var width = 0,
                                     $frame = $(e.target.contentWindow ? e.target.contentWindow : e.target.contentDocument.defaultView).on('resize', $.proxy(function (e) {
