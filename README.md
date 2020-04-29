@@ -1,31 +1,7 @@
-# WPDC - WordPress Docker Compose
+# Afronteira Websitee - WordPress Docker Compose
 
-Easy WordPress development with Docker and Docker Compose.
-
-With this project you can quickly run the following:
-
-- [WordPress and WP CLI](https://hub.docker.com/_/wordpress/)
-- [phpMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-- [MySQL](https://hub.docker.com/_/mysql/)
-
-Contents:
-
-- [Requirements](#requirements)
-- [Configuration](#configuration)
 - [Installation](#installation)
 - [Usage](#usage)
-
-## Requirements
-
-Make sure you have the latest versions of **Docker** and **Docker Compose** installed on your machine.
-
-Clone this repository or copy the files from this repository into a new folder. In the **docker-compose.yml** file you may change the IP address (in case you run multiple containers) or the database from MySQL to MariaDB.
-
-Make sure to [add your user to the `docker` group](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user) when using Linux.
-
-## Configuration
-
-Edit the `.env` file to change the default IP address, MySQL root password and WordPress database name.
 
 ## Installation
 
