@@ -1,0 +1,409 @@
+main {
+
+    a{
+        text-decoration: none !important;
+        color: $darker_gray !important;
+    }
+
+    .n2-ss-slider {
+        border-radius: 4px !important;
+        overflow: hidden;
+    }
+
+    .af-card {
+        background: none;
+        border: none !important;
+        overflow: hidden;
+
+        .af-img-card {
+            border-radius: 4px !important;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: transform 2s;
+                object-fit: cover;
+                object-position: left top;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .card-body {
+            font-family: $roboto-bold;
+            color: $black;
+
+            h5{
+                @include typoH5;
+            }
+
+            i {
+                color: $dark_gray;
+            }
+
+            .af-card-title{
+                height: 62px;
+                overflow: hidden;
+            }
+
+            .af-card-date {
+                @include typoDate;
+            }
+
+            span p{
+                height: 95px;
+                overflow: hidden;
+            }
+
+        }
+    }
+
+    .af-card-right {
+        .af-img-card {
+            border-radius: 4px !important;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .card-body {
+            button {
+                padding: 4px 3px;
+                font-size: 9px;
+                line-height: 1;
+                border-radius: .2rem;
+            }
+
+            h5 {
+                @include typoH5;
+            }
+
+            .af-card-date {
+                @include typoDateSmall;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    .af-destaques {
+
+        @include mobile {
+            padding: 30px;
+        }
+
+        .af-border {
+            border-radius: 4px !important;
+
+            @include mobile {
+                padding: 0px !important;
+                margin-top: -50px;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .af-card-destaque {
+            border-radius: 4px !important;
+            overflow: hidden;
+            height: 190px;
+
+            &:hover {
+                transition: transform 2s;
+            }
+
+            .card-body {
+                font-family: $roboto-bold;
+                color: $white;
+                text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+                opacity: 1;
+                transform: scale(1);
+                transition: transform 2s;
+
+                &:hover {
+                    background: #000;
+                    opacity: 0.7;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+
+    .af-ultimas-noticias,
+    .af-noticias-cidade,
+    .af-noticias-mundo {
+        background: $light_gray;
+
+        h1 {
+            @include typoH1;
+            text-transform: uppercase;
+            font-size: 18px !important;
+            color: $af_blue;
+        }
+
+        .af-half-border {
+            border-color: $af_blue;
+        }
+
+        .af-card {
+            min-height: 300px;
+
+            .af-img-card {
+                height: 170px;
+            }
+
+            .card-body {
+                p {
+                    color: $darker_gray;
+                    @include typoParagraph;
+                }
+
+            }
+        }
+    }
+
+    .af-section-3 {
+        h1 {
+            @include typoH1;
+            color: $af_red;
+            text-transform: uppercase;
+            font-size: 18px !important;
+        }
+
+        .af-half-border {
+            border-color: $af_red;
+        }
+        .af-card-right{
+            height:115px;
+        }
+
+        .af-card {
+
+            .af-img-card {
+                width: 100%;
+
+                .card-img-top{
+                    border-radius: 4px !important;
+                    overflow: hidden;
+                }
+
+                img {
+                    z-index: 998;
+                }
+
+                button {
+                    padding: .15rem .3rem;
+                    font-size: .825rem;
+                    line-height: 1.5;
+                    border-radius: .2rem;
+                    z-index: 999;
+                    display: inline-block;
+                    position: relative;
+                    left: 30px;
+                    top: -50px;
+                }
+            }
+
+            .card-body {
+                p {
+                    color: $darker_gray;
+                    @include typoParagraph;
+                }
+
+            }
+        }
+
+        .af-redessociais {
+
+            @include mobile {
+                margin-top: 70px;
+
+                .af-banner-quadrado {
+                    margin-top: 35px;
+                }
+            }
+
+            .af-half-border {
+                &::before {
+                    width: 40%;
+                }
+            }
+        }
+
+        .af-banner-quadrado {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .af-colunistas {
+        h1 {
+            @include typoH1;
+            color: $af_blue;
+            text-transform: uppercase;
+            font-size: 18px !important;
+        }
+
+        .af-half-border {
+            border-color: $af_blue;
+
+            &::before {
+                width: 6%;
+            }
+        }
+
+        .af-card-colunistas {
+            .af-img-card {
+                width: 100%;
+
+                img {
+                    max-width: 200px;
+                    width: 100%;
+                    height: 100%;
+                    max-height: 200px;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            .card-body {
+                p {
+                    font-family: $roboto-thin;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .af-noticias-cidade {
+
+        .af-half-border {
+
+            &::before {
+                width: 8%;
+            }
+        }
+    }
+
+    .af-noticias-mundo {
+        background: $white;
+
+        h1 {
+            color: $af_red;
+        }
+
+        .af-half-border {
+            border-color: $af_red;
+
+            &::before {
+                width: 8%;
+            }
+        }
+
+        .section-mundo {
+            @include mobile {
+                margin-top: 40px;
+                margin-bottom: -40px;
+            }
+        }
+    }
+
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    } 
+
+    .embed-container-teaser iframe,
+    .embed-container-teaser object,
+    .embed-container-teaser embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .embed-container-peq iframe,
+    .embed-container-peq object,
+    .embed-container-peq embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 36%;
+        border-radius: 4px !important;
+        overflow: hidden;
+    }
+
+    .archive{
+
+        .af-card-right {
+            .af-img-card {
+                border-radius: 4px !important;
+                max-width: 290px;
+                max-height: 164px;
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(1);
+                    transition: transform 2s;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+    
+            .card-body {
+                button {
+                    padding: 4px 3px;
+                    font-size: 9px;
+                    line-height: 1;
+                    border-radius: .2rem;
+                }
+    
+                h5 {
+                    @include typoH5;
+                }
+    
+                .af-card-date {
+                    @include typoDateSmall;
+                    margin-top: 1px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.wpcf7-submit{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

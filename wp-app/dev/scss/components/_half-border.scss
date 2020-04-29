@@ -1,0 +1,14 @@
+.af-half-border {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 8%;
+        border-top: 2px solid;
+        border-left: 2px solid;
+    }
+}

@@ -1,0 +1,16 @@
+footer {
+    color: $white; 
+
+    .af-half-border {
+        @include typoH3;
+
+        &::before {
+            width: 24%;
+        }
+
+    }
+
+    p{
+        @include typoParagraph;
+    }
+}
